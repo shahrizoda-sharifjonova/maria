@@ -1,0 +1,86 @@
+.organizations{
+    @include res('padding-top', 100px);
+    @include res('padding-bottom', 120px);
+    @include media(575){
+        @include resa('padding-top', 80px);
+        @include resa('padding-bottom', 80px);
+    }
+    &__title{
+        text-align: right;
+        @include res('font-size', 107px);
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        color: #EFEDEB;
+        @include media(575){
+            @include resa('font-size', 49px);
+            @include resa('margin-bottom', 24px);
+        }
+    }
+    &__subtitle{
+        color: #292826;
+        @include res('font-size', 62px);
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        @include res('margin-bottom', 40px);
+        @include media(575){
+            @include resa('font-size', 36px);
+            @include resa('margin-bottom', 30px);
+        }
+    }
+    &__content{
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+        @include media(575){
+            flex-direction: column;
+        }
+    }
+    &__item{
+        position: relative;
+        isolation: isolate;
+        width: calc(25% - 1.172vw);
+        overflow: hidden;
+        @include media(575){
+            @include resa('width', 330px);
+        }
+        &:not(:last-of-type){
+            @include media(575){
+                @include resa('margin-bottom', 20px);
+            }
+        }
+    }
+    &__img{
+        width: 100%;
+        line-height: 0;
+        transition: 300ms ease;
+        &:hover{
+            transform: scale(1.1);
+        }
+        img{
+            line-height: 0;
+            width: 100%;
+        }
+    }
+    &__p{
+        position: absolute;
+        @include res('bottom', 30px);
+        @include res('left', 20px);
+        @include res('padding-bottom', 8px);
+        border-bottom: 0.104vw solid #5793A3;
+        color: #FFF;
+        @include res('font-size', 30px);
+        @include res('width', 245px);
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        @include media(575){
+            @include resa('bottom', 24px);
+            @include resa('left', 24px);
+            @include resa('font-size', 24px);
+            @include resa('padding-bottom', 8px);
+            @include resa('width', 194px);
+        }
+    }
+}

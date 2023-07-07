@@ -182,12 +182,12 @@
         z-index: 2;
         @include media(575){
             @include resa('height', 460px);
-            @include resa('width', 560px);
+            @include resa('width', 360px);
             display: flex;
             flex-direction: column;
             left: 0;
             @include resa('padding-top', 88px);
-            @include resa('padding-right', 50px);
+            @include resa('padding-right', 20px);
             @include resa('padding-left', 20px);
         }
         &.active{
