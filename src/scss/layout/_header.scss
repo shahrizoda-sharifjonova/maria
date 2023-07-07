@@ -1,1 +1,218 @@
-// Шапка
+.header{
+    @include res('padding-top', 21px);
+    overflow-x: hidden;
+    @include media(575){
+        @include resa('padding-top', 20px);
+        @include resa('padding-bottom', 20px);
+    }
+    &__nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .logo{
+        @include res('width', 128px);
+        @include media(575){
+            @include resa('width', 71px);
+        }
+        img{
+            @include res('width', 128px);
+            @include media(575){
+                @include resa('width', 71px);
+            }
+        }
+    }
+    &__content{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    &__medias{
+        display: flex;
+        align-items: center;
+        @include media(575){
+            @include resa('margin-right', 20px);
+        }
+    }
+    &__media{
+        display: block;
+        @include res('width', 40px);
+        @include res('height', 40px);
+        @include media(575){
+            @include resa('width', 30px);
+            @include resa('height', 30px);
+        }
+        &:nth-of-type(1){
+            @include res('margin-right', 20px);
+            @include media(575){
+                @include resa('margin-right', 10px);
+            }
+        }
+        &:not(:last-of-type){
+            @include media(575){
+                @include resa('margin-right', 10px);
+            }
+        }
+        svg{
+            @include res('width', 40px);
+            @include res('height', 40px);
+            @include media(575){
+                @include resa('width', 30px);
+                @include resa('height', 30px);
+            }
+            path{
+                fill: #5793A3;
+                @include media(575){
+                    fill: #5AADC3;
+                }
+            }
+        }
+        &.phone{
+            display: none;
+            @include media(575){
+                display: block;
+            }
+            svg{
+                path{
+                    fill: #fff;
+                    &:nth-of-type(1){
+                        fill: #5AADC4;
+                    }
+                }
+            }
+        }
+    }
+    &__phone{
+        color: var(--black, #292826);
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        @include res('font-size', 18px);
+        @include res('padding-top', 16px);
+        @include res('padding-right', 32px);
+        @include res('padding-bottom', 16px);
+        @include res('padding-left', 32px);
+        @include res('border-radius', 6px);
+        border: 0.104vw solid #5793A3;
+        @include res('margin-left', 30px);
+        @include res('margin-right', 30px);
+        @include media(575){
+            display: none;
+        }
+    }
+    .menu{
+        @include res('width', 45px);
+        @include res('height', 28px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        cursor: pointer;
+        z-index: 3;
+        @include media(575){
+            @include resa('width', 24px);
+            @include resa('height', 18px);
+        }
+        &-btn{
+            @include res('width', 45px);
+            @include res('height', 4px);
+            background: #292826;
+            @include media(575){
+                @include resa('width', 34px);
+                @include resa('height', 2px);
+            }
+        }
+        &::before{
+            content: '';
+            position: absolute;
+            @include res('width', 45px);
+            @include res('height', 4px); 
+            background: #292826;
+            top: 0;
+            transition: transform 300ms ease;
+            @include media(575){
+                @include resa('width', 24px);
+                @include resa('height', 2px);
+            }
+        }
+        &::after{
+            content: '';
+            position: absolute;
+            @include res('width', 45px);
+            @include res('height', 4px); 
+            background: #292826;
+            bottom: 0;
+            transition: transform 300ms ease;
+            @include media(575){
+                @include resa('width', 24px);
+                @include resa('height', 2px);
+            }
+        }
+        &.active{
+            .menu-btn{
+                display: none;
+            }
+            &::before{
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%) rotate(45deg);
+            }
+            &::after{
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%) rotate(-45deg);
+            }
+        }
+    }
+    &__list{
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        @include res('width', 650px);
+        background: #F6E6C9;
+        @include res('padding-top', 140px);
+        @include res('padding-right', 40px);
+        @include res('padding-bottom', 88px);
+        @include res('padding-left', 40px);
+        opacity: 0;
+        visibility: hidden;
+        transition: 300ms ease;
+        z-index: 2;
+        @include media(575){
+            @include resa('height', 460px);
+            @include resa('width', 560px);
+            display: flex;
+            flex-direction: column;
+            left: 0;
+            @include resa('padding-top', 88px);
+            @include resa('padding-right', 50px);
+            @include resa('padding-left', 20px);
+        }
+        &.active{
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+    &__li{
+        &:not(:last-of-type){
+            @include res('margin-bottom', 20px);
+            @include media(575){
+                @include resa('margin-bottom', 20px);
+            }
+        }
+    }
+    &__link{
+        color: var(--black, #292826);
+        font-family: Montserrat;
+        font-size: 20px;
+        @include res('font-size', 20px);
+        @include res('line-height', 24px);
+        font-style: normal;
+        font-weight: 400;
+        @include media(575){
+            @include resa('font-size', 20px);
+        }
+    }
+}
