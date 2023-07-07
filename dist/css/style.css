@@ -448,11 +448,6 @@
 }
 
 .organizations__subtitle {
-  color: #292826;
-  font-size: 3.2291666667vw;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
   margin-bottom: 2.0833333333vw;
 }
 
@@ -506,6 +501,107 @@
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+}
+
+.contacts {
+  padding-bottom: 5.2083333333vw;
+}
+
+.contacts__body {
+  border-radius: 4px;
+  border-radius: 0.2083333333vw;
+  background: #FFF;
+  -webkit-box-shadow: 0px 0.26vw 1.042vw 0px rgba(0, 0, 0, 0.13);
+          box-shadow: 0px 0.26vw 1.042vw 0px rgba(0, 0, 0, 0.13);
+  padding-top: 3.125vw;
+  padding-right: 5vw;
+  padding-bottom: 3.125vw;
+  padding-left: 5vw;
+}
+
+.contacts__title {
+  max-width: 43.5416666667vw;
+  margin-bottom: 1.5625vw;
+}
+
+.contacts__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contacts__input {
+  width: calc(25% - 1.172vw);
+  padding: 0.8333333333vw;
+  font-size: 0.9375vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border-radius: 0.2083333333vw;
+  border: 0.052vw solid var(--black, #292826);
+  background: #F2F0EC;
+}
+
+.contacts__input::-webkit-input-placeholder {
+  color: #C8C8C8;
+  font-size: 0.9375vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.contacts__input::-moz-placeholder {
+  color: #C8C8C8;
+  font-size: 0.9375vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.contacts__input:-ms-input-placeholder {
+  color: #C8C8C8;
+  font-size: 0.9375vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.contacts__input::-ms-input-placeholder {
+  color: #C8C8C8;
+  font-size: 0.9375vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.contacts__input::placeholder {
+  color: #C8C8C8;
+  font-size: 0.9375vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.contacts__btn {
+  width: calc(25% - 1.172vw);
+  color: #FFF;
+  font-family: "Montserrat";
+  font-size: 0.9375vw;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding-top: 0.8333333333vw;
+  padding-right: 3.125vw;
+  padding-bottom: 0.8333333333vw;
+  padding-left: 3.125vw;
+  border-radius: 0.3125vw;
+  background: #5793A3;
 }
 
 * {
@@ -602,6 +698,24 @@ body main {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.title {
+  color: #292826;
+  font-size: 3.2291666667vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 @media (max-width: 576px) {
@@ -793,7 +907,6 @@ body main {
   }
 
   .organizations__subtitle {
-    font-size: 10vw;
     margin-bottom: 8.3333333333vw;
   }
 
@@ -818,5 +931,66 @@ body main {
     font-size: 6.6666666667vw;
     padding-bottom: 2.2222222222vw;
     width: 53.8888888889vw;
+  }
+
+  .contacts__body {
+    padding-top: 16.6666666667vw;
+    padding-right: 5.5555555556vw;
+    padding-bottom: 16.6666666667vw;
+    padding-left: 5.5555555556vw;
+  }
+
+  .contacts__title {
+    max-width: 100%;
+    margin-bottom: 8.3333333333vw;
+  }
+
+  .contacts__form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .contacts__input {
+    width: 100%;
+    font-size: 5vw;
+    margin-bottom: 8.3333333333vw;
+    padding: 4.4444444444vw;
+    border-radius: 1.1111111111vw;
+  }
+
+  .contacts__input::-webkit-input-placeholder {
+    font-size: 5vw;
+  }
+
+  .contacts__input::-moz-placeholder {
+    font-size: 5vw;
+  }
+
+  .contacts__input:-ms-input-placeholder {
+    font-size: 5vw;
+  }
+
+  .contacts__input::-ms-input-placeholder {
+    font-size: 5vw;
+  }
+
+  .contacts__input::placeholder {
+    font-size: 5vw;
+  }
+
+  .contacts__btn {
+    width: 100%;
+    font-size: 5vw;
+    padding-top: 4.4444444444vw;
+    padding-right: 16.6666666667vw;
+    padding-bottom: 4.4444444444vw;
+    padding-left: 16.6666666667vw;
+    border-radius: 1.6666666667vw;
+  }
+
+  .title {
+    font-size: 9.1666666667vw;
   }
 }

@@ -73,3 +73,21 @@ body{
         @include resa('max-width', 330px);
     }
 }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+.title{
+    color: #292826;
+    @include res('font-size', 62px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    @include media(575){
+        @include resa('font-size', 33px);
+    }
+}

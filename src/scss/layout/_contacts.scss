@@ -1,0 +1,87 @@
+.contacts{
+    @include res('padding-bottom', 100px);
+    &__body{
+        border-radius: 4px;
+        @include res('border-radius', 4px);
+        background: #FFF;
+        box-shadow: 0px 0.26vw 1.042vw 0px rgba(0, 0, 0, 0.13);
+        @include res('padding-top', 60px);
+        @include res('padding-right', 96px);
+        @include res('padding-bottom', 60px);
+        @include res('padding-left', 96px);
+        @include media(575){
+            @include resa('padding-top', 60px);
+            @include resa('padding-right', 20px);
+            @include resa('padding-bottom', 60px);
+            @include resa('padding-left', 20px);
+        }
+    }
+    &__title{
+        @include res('max-width', 836px);
+        @include res('margin-bottom', 30px);
+        @include media(575){
+            max-width: 100%;
+            @include resa('margin-bottom', 30px);
+        }
+    }
+    &__form{
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+        @include media(575){
+            flex-direction: column;
+        }
+    }
+    &__input{
+        width: calc(25% - 1.172vw);
+        @include res('padding', 16px);
+        @include res('font-size', 18px);
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        @include res('border-radius', 4px);
+        border: 0.052vw solid var(--black, #292826);
+        background: #F2F0EC;
+        @include media(575){
+            width: 100%;
+            @include resa('font-size', 18px);
+            @include resa('margin-bottom', 30px);
+            @include resa('padding', 16px);
+            @include resa('border-radius', 4px);
+        }
+        &::placeholder{
+            color: #C8C8C8;
+            @include res('font-size', 18px);
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            @include media(575){
+                @include resa('font-size', 18px);
+            }
+        }
+    }
+    &__btn{
+        width: calc(25% - 1.172vw);
+        color: #FFF;
+        font-family: 'Montserrat';
+        @include res('font-size', 18px);
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        @include res('padding-top', 16px);
+        @include res('padding-right', 60px);
+        @include res('padding-bottom', 16px);
+        @include res('padding-left', 60px);
+        @include res('border-radius', 6px);
+        background: #5793A3;
+        @include media(575){
+            width: 100%;
+            @include resa('font-size', 18px);
+            @include resa('padding-top', 16px);
+            @include resa('padding-right', 60px);
+            @include resa('padding-bottom', 16px);
+            @include resa('padding-left', 60px);
+            @include resa('border-radius', 6px);
+        }
+    }
+}

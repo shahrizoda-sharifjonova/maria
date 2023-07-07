@@ -18,14 +18,8 @@
         }
     }
     &__subtitle{
-        color: #292826;
-        @include res('font-size', 62px);
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
         @include res('margin-bottom', 40px);
         @include media(575){
-            @include resa('font-size', 36px);
             @include resa('margin-bottom', 30px);
         }
     }

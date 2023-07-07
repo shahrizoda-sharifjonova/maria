@@ -1,0 +1,9 @@
+mixin contacts()
+    .contacts 
+        .contacts__body.container 
+            h2.contacts__title.title Заполните форму и я свяжусь с вами в ближайшее время
+            form(action="").contacts__form
+                input(type="text" placeholder="Имя" required).contacts__input 
+                input(type="number" placeholder="Телефон" required).contacts__input 
+                input(type="email" placeholder="Электронная почта" required).contacts__input 
+                button(type="submit").contacts__btn Связаться
