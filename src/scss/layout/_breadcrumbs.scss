@@ -1,0 +1,36 @@
+.breadcrumbs{
+    @include res('padding-top', 40px);
+    @include res('padding-bottom', 40px);
+    border-top: solid #E7E7E7;
+    @include res('border-width', 1px);
+    @include media(576){
+        border: none;
+        @include resa('padding-top', 20px);
+        @include resa('padding-bottom', 20px);
+    }
+    &__body{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        @include res('gap', 12px);
+        flex-wrap: wrap;
+        @include media(576){
+            @include resa('gap', 8px);
+        }
+    }
+    &__item{
+        color: #292826;
+        @include res('font-size', 18px);
+        font-style: normal;
+        font-weight: 500;
+        line-height: 130%;
+        width: max-content;
+        @include media(576){
+            @include resa('font-size', 12px);
+        }
+        &.active{
+            color: #5AADC3;
+            font-weight: 700;
+        }
+    }
+}

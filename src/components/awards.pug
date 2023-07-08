@@ -1,0 +1,15 @@
+mixin awards()
+    .awards 
+        .awards__body.container_2
+            h2.awards__title.title AWARDS
+            p.awards__subtitle.subtitle Премии
+            .awards__content 
+                p.awards__p Свои награды и благодарственные письма отправлю #[span по запросу]
+    .contacts.contacts_yellow 
+        .contacts__body.container 
+            h2.contacts__title.subtitle Заполните форму и я свяжусь с вами в ближайшее время
+            form(action="").contacts__form
+                input(type="text" placeholder="Имя" required).contacts__input 
+                input(type="number" placeholder="Телефон" required).contacts__input 
+                input(type="email" placeholder="Электронная почта" required).contacts__input 
+                button(type="submit").contacts__btn Связаться

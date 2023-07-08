@@ -3,6 +3,17 @@
     @include media(575){
         @include resa('padding-bottom', 80px);
     }
+    &_yellow{
+        @include media(575){
+            @include resa('padding-bottom', 65px);
+        }
+        .contacts__body{
+            background: #F6E6C9;
+        }
+        .contacts__input{
+            border: 0.052vw solid #CDC8AB;
+        }
+    }
     &__body{
         border-radius: 4px;
         @include res('border-radius', 4px);

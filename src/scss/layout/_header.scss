@@ -1,5 +1,6 @@
 .header{
-    @include res('padding-top', 21px);
+    @include res('padding-top', 20px);
+    @include res('padding-bottom', 20px);
     overflow-x: hidden;
     @include media(575){
         @include resa('padding-top', 20px);
