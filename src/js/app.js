@@ -54,10 +54,19 @@ new Swiper(".cases__swiper", {
 
 const menu = document.querySelector('.menu');
 const headerList = document.querySelector('.header__list');
+const links = document.querySelectorAll('.header__link');
 const body = document.querySelector('body');
 
 menu.addEventListener('click', (e)=>{
     menu.classList.toggle('active')
     headerList.classList.toggle('active')
     body.classList.toggle('active')
+})
+
+links.forEach(el => {
+    el.addEventListener('click', () => {
+        menu.classList.remove('active')
+        headerList.classList.remove('active')
+        body.classList.remove('active')
+    })
 })
