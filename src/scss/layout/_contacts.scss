@@ -88,6 +88,10 @@
         @include res('padding-left', 60px);
         @include res('border-radius', 6px);
         background: #5793A3;
+        transition: 300ms ease;
+        &:hover{
+            background: #2F6A79;
+        }
         @include media(575){
             width: 100%;
             @include resa('font-size', 18px);

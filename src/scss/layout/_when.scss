@@ -151,6 +151,9 @@
             @include res('border-radius', 6px);
             background: #5793A3;
             transition: 300ms ease;
+            &:hover{
+                background: #2F6A79;
+            }
             @include media(575){
                 @include resa('font-size', 18px);
                 @include resa('padding-top', 16px);
@@ -159,9 +162,6 @@
                 @include resa('padding-left', 60px);
                 @include resa('border-radius', 6px);
                 width: 100%;
-            }
-            &:hover{
-                background: lighten($color: #5793A3, $amount: 5);
             }
         }
     }

@@ -98,7 +98,7 @@
         width: calc(100% + 7.813vw);
         @include res('height', 60px);
         @include res('margin-left', -90px);
-        transform: translateY(-11.979vw);
+        transform: translateY(-14.979vw);
         @include media(575){
             display: none;
         }

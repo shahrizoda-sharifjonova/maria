@@ -98,6 +98,10 @@
         border: 0.104vw solid #5793A3;
         @include res('margin-left', 30px);
         @include res('margin-right', 30px);
+        transition: 300ms ease;
+        &:hover{
+            border: 0.104vw solid #2F6A79;
+        }
         @include media(575){
             display: none;
         }
