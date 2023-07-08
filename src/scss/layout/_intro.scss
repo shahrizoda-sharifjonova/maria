@@ -25,6 +25,7 @@
             bottom: 0;
             @include res('width', 1143px);
             background: url(../img/intro-bg.png) left / cover no-repeat;
+            pointer-events: none;
             @include media(575){
                 display: none;
             }
