@@ -27,6 +27,31 @@ new Swiper(".reviews__swiper", {
     }
 });
 
+new Swiper(".cases__swiper", {
+    grabCursor: true,
+    modules: [Navigation, Pagination],
+    slidesPerView: 'auto',
+    spaceBetween:20,
+    watchSlidesProgress: true,
+    navigation:{
+        prevEl: ".cases__button-prev",
+        nextEl: ".cases__button-next",
+    },
+    pagination:{
+        el: '.cases__pagination',
+    },
+    breakpoints:{
+        576: {
+            slidesPerView: 4,
+            spaceBetween:20,
+        },
+        1200:{
+            slidesPerView: 4,
+            spaceBetween:30,
+        }
+    }
+});
+
 const menu = document.querySelector('.menu');
 const headerList = document.querySelector('.header__list');
 const body = document.querySelector('body');
