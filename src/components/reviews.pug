@@ -1,0 +1,41 @@
+mixin reviews()
+    .reviews 
+        .reviews__body.container 
+            h2.reviews__title.title REVIEWS
+            p.reviews__subtitle.subtitle Отзывы
+            .reviews__slider 
+                .reviews__swiper.swiper 
+                    .reviews__swiper-wrapper.swiper-wrapper 
+                        .reviews__slide.swiper-slide 
+                            p.reviews__name С уважением, Анна С
+                            p.reviews__desc "Работа с Марией нашла отклик в моем сердце! Ее профессионализм и теплота сразу покорили меня. Она сделала наш корпоратив незабываемым опытом. Благодаря ее вниманию к деталям и организационным навыкам, я смог расслабиться и доверить полностью подготовку и проведение мероприятия не себе). Рекомендую Марию всем, кто ищет организатора мероприятий!"
+                        .reviews__slide.swiper-slide 
+                            p.reviews__name Ольга Белова
+                            p.reviews__desc "Мария, спасибо огромное за наш чудесный новогодний корпоратив! Это было феерично – одни эмоции!) Все прошло настолько гладко и на позитиве – получила кучу благодарностей от сотрудников и все их мысленно посылаю тебе!! Спасибо еще раз!»
+                        .reviews__slide.swiper-slide 
+                            p.reviews__name Елена Верзун
+                            .reviews__img 
+                                img(src="@img/reviews-img-1.png", alt="" draggable="false")
+                        .reviews__slide.swiper-slide 
+                            p.reviews__name С уважением, Акопян Э.А.
+                            p.reviews__desc « Маша!!!! Филиалы просто в восторге и просят почаще проводить такие ивенты  Спасибо тебе большое! Если бы не ты, я вообще не знаю что бы делала! Спасибо, ты чудо)» 
+                        .reviews__slide.swiper-slide 
+                            p.reviews__name Олег Савин
+                            p.reviews__desc "Стояла задача организовать выставку. Долго думали, как это все сделать правильно. Так бы и думали, если бы не познакомились с Марией. Очень профессиональный человек, который помог нам разобраться даже в самых на первый взгляд, незаметных деталях. Все прошло на высшем уровне, наши гости остались довольны. Спасибо за ваш труд!"
+                        .reviews__slide.swiper-slide 
+                            p.reviews__name Темник Анна Владимировна
+                            .reviews__img 
+                                img(src="@img/reviews-img-2.png", alt="" draggable="false")
+                        .reviews__slide.swiper-slide 
+                            p.reviews__name Дмитрий Земских
+                            p.reviews__desc «Мария, от себя лично и от моих коллег выражаю большую благодарность за корпоративный выезд в Конаково Ривер клаб. День Строителя прошел на высшем уровне, руководство очень довольно) Так что скоро жди запрос на организацию Нового года!»
+                .reviews__buttons 
+                    .reviews__button-prev.reviews__btn
+                        <svg width="19" height="34" viewBox="0 0 19 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17 2L2 17L17 32" stroke="" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    .reviews__button-next.reviews__btn
+                        <svg width="19" height="34" viewBox="0 0 19 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2 2L17 17L2 32" stroke="" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                .reviews__pagination.swiper-pagination

@@ -1,0 +1,168 @@
+.when{
+    overflow-x: hidden;
+    @include res('padding-top', 140px);
+    @include res('padding-bottom', 100px);
+    @include media(575){
+        padding-top: 0;
+        @include resa('padding-bottom', 80px);
+    }
+    &__subtitle{
+        @include res('margin-bottom', 40px);
+        @include media(575){
+            @include resa('margin-bottom', 30px);
+        }
+    }
+    &__content{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: stretch;
+        @include res('margin-bottom', 120px);
+        @include media(575){
+            flex-direction: column;
+            @include resa('margin-bottom', 80px);
+        }
+    }
+    &__item{
+        width: calc(50% - 0.781vw);
+        display: flex;
+        align-items: flex-start;
+        @include media(575){
+            width: 100%;
+        }
+        &:nth-of-type(1), &:nth-of-type(2){
+            @include res('margin-bottom', 38px);
+            @include media(575){
+                @include resa('margin-bottom', 20px);
+            }
+        }
+        &:not(:last-of-type){
+            @include media(575){
+                @include resa('margin-bottom', 20px);
+            }
+        }
+    }
+    &__svg{
+        @include res('min-width', 28px);
+        @include res('width', 28px);
+        @include res('height', 28px);
+        @include res('margin-right', 12px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include media(575){
+            @include resa('min-width', 28px);
+            @include resa('width', 28px);
+            @include resa('height', 28px);
+            @include resa('margin-right', 12px);
+        }
+        svg{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &__p{
+        color: var(--black, #292826);
+        @include res('font-size', 30px);
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        @include res('margin-bottom', 14px);
+        @include media(575){
+            @include resa('font-size', 24px);
+            @include resa('margin-bottom', 12px);
+        }
+    }
+    &__desc{
+        color: var(--black, #292826);
+        font-family: 'Montserrat';
+        @include res('font-size', 18px);
+        @include res('line-height', 24px);
+        font-style: normal;
+        font-weight: 400;
+        @include media(575){
+            @include resa('font-size', 18px);
+            @include resa('line-height', 24px);
+        }
+    }
+    .offer{
+        position: relative;
+        background: #F2F0EC;
+        @include res('padding-top', 74px);
+        @include res('padding-right', 104px);
+        @include res('padding-bottom', 74px);
+        @include res('padding-left', 104px);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        isolation: isolate;
+        @include media(575){
+            margin-left: -6.111vw;
+            margin-right: -6.111vw;
+            @include resa('padding-top', 60px);
+            @include resa('padding-right', 20px);
+            @include resa('padding-bottom', 60px);
+            @include resa('padding-left', 20px);
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        &::before{
+            content: '';
+            position: absolute;
+            background: url(../img/when-bg.png) center / cover no-repeat;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            right: 0;
+            z-index: -1;
+            top: 0;
+        }
+        &__p{
+            color: #292826;
+            font-family: 'BadScript';
+            @include res('font-size', 38px);
+            font-style: normal;
+            font-weight: 400;
+            line-height: 130%;
+            @include res('max-width', 655px);
+            width: 100%;
+            @include media(575){
+                @include resa('font-size', 28px);
+                max-width: 100%;
+                @include resa('margin-bottom', 30px);
+            }
+            span{
+                font-family: 'BadScript';
+                color: #5AADC3;
+            }
+        }
+        &__btn{
+            cursor: pointer;
+            color: #FFF;
+            font-family: 'Montserrat';
+            @include res('font-size', 18px);
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            @include res('padding-top', 16px);
+            @include res('padding-right', 60px);
+            @include res('padding-bottom', 16px);
+            @include res('padding-left', 60px);
+            @include res('border-radius', 6px);
+            background: #5793A3;
+            transition: 300ms ease;
+            @include media(575){
+                @include resa('font-size', 18px);
+                @include resa('padding-top', 16px);
+                @include resa('padding-right', 60px);
+                @include resa('padding-bottom', 16px);
+                @include resa('padding-left', 60px);
+                @include resa('border-radius', 6px);
+                width: 100%;
+            }
+            &:hover{
+                background: lighten($color: #5793A3, $amount: 5);
+            }
+        }
+    }
+}

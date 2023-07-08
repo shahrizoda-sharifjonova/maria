@@ -1,0 +1,67 @@
+.why{
+    @include media(575){
+        display: none;
+    }
+    &__content{
+        @include res('border-radius', 10px);
+        background: linear-gradient(314deg, #F5EDD9 0%, #FFF4D8 33.12%, rgba(223, 194, 152, 0.71) 100%);
+        @include res('padding-top', 80px);
+        @include res('padding-right', 96px);
+        @include res('padding-bottom', 80px);
+        @include res('padding-left', 96px);
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            background: url('../img/why-girl.png') center / cover no-repeat;
+            @include res('width', 430px);
+            @include res('height', 721px);
+            @include res('right', 96px);
+            bottom: 0;
+            line-height: 0;
+        }
+    }
+    &__subtitle{
+        @include res('margin-bottom', 40px);
+    }
+    &__wrapper{
+        display: flex;
+        align-items: flex-start;
+    }
+    &__left{
+        @include res('margin-right', 30px);
+    }
+    &__item{
+        @include res('width', 386px);
+        display: flex;
+        align-items: flex-start;
+        &:not(:last-of-type){
+            @include res('margin-bottom', 40px);
+        }
+    }
+    &__img{
+        @include res('margin-right', 16px);
+        @include res('width', 60px);
+        @include res('height', 60px);
+        img{
+            @include res('width', 60px);
+            @include res('height', 60px);
+        }
+    }
+    &__p{
+        color: #4A4742;
+        @include res('font-size', 20px);
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        @include res('margin-bottom', 10px);
+    }
+    &__desc{
+        color: #56534E;
+        font-family: 'Montserrat';
+        @include res('font-size', 14px);
+        @include res('line-height', 17px);
+        font-style: normal;
+        font-weight: 400;
+    }
+}

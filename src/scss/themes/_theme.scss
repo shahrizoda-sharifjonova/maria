@@ -82,6 +82,17 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 .title{
+    text-align: right;
+    @include res('font-size', 107px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: #EFEDEB;
+    @include media(575){
+        @include resa('font-size', 49px);
+    }
+}
+.subtitle{
     color: #292826;
     @include res('font-size', 62px);
     font-style: normal;
