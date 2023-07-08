@@ -1,0 +1,39 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="css/style.min.css")
+        title Document
+    body 
+        .wrapper 
+            include components/header 
+            +header
+            .main   
+                .breadcrumbs 
+                    .breadcrumbs__body.container_2 
+                        a(href="index.html").breadcrumbs__item Главная 
+                        span.breadcrumbs__item /
+                        a(href="#!").breadcrumbs__item.active Деловые мероприятия
+                .event 
+                    .event__body.container_2 
+                        h1.event__title Деловые мероприятия
+                        .event__tags 
+                            .event__tag Форумы
+                            .event__tag Выставки
+                            .event__tag Конференции
+                            .event__tag Тренинги
+                        .event__content 
+                            .event__item 
+                                .event__grid 
+                                    div
+                                        img(src="@img/bussiness-1-1.png", alt="" draggable="false")
+                                    div
+                                        img(src="@img/bussiness-1-2.png", alt="" draggable="false")
+                                    div
+                                        img(src="@img/bussiness-1-3.png", alt="" draggable="false")
+                                .event__item-title Российская неделя ивента
+            include components/footer 
+            +footer
+        script(src="js/app.min.js") 
