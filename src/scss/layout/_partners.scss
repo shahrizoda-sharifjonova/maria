@@ -1,0 +1,37 @@
+.partners{
+    background: #F6E6C9;
+    @include res('padding-top', 20px);
+    @include res('padding-bottom', 100px);
+    &__title{
+        color: rgba(#796F5B, .19) !important;
+    }
+    &__subtitle{
+        @include res('margin-bottom', 40px);
+    }
+    &__content{
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+    }
+    &__item{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include res('height', 209px);
+        border: 0.052vw solid #CDC8AB;
+        border-right: none;
+        width: 20%;
+        &:last-of-type{
+            border-right: 0.052vw solid #CDC8AB;
+        }
+    }
+    &__img{
+        @include res('width', 130px);
+        img{
+            width: 100%;
+        }
+        &.sm{
+            @include res('width', 100px);
+        }
+    }
+}
