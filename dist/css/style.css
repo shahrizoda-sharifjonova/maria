@@ -1974,6 +1974,7 @@ input[type=number] {
     padding-bottom: 2.7777777778vw;
     padding-left: 6.6666666667vw;
     font-size: 5.5555555556vw;
+    font-weight: 600;
   }
 
   .intro__img {
