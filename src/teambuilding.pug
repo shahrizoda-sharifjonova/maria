@@ -1,0 +1,96 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="css/style.min.css")
+        title Document
+    body 
+        .wrapper 
+            include components/header 
+            +header
+            .main   
+                .breadcrumbs 
+                    .breadcrumbs__body.container_2 
+                        a(href="index.html").breadcrumbs__item Главная 
+                        span.breadcrumbs__item /
+                        a(href="#!").breadcrumbs__item.active Тимбилдинги
+                .event 
+                    .event__body.container_2 
+                        h1.event__title Тимбилдинги
+                        .event__tags 
+                            .event__tag Квесты
+                            .event__tag Интеллектуальные
+                            .event__tag Экстремальные
+                            .event__tag Творческие
+                            .event__tag Социальные
+                            .event__tag Фестивальные форматы
+                            .event__tag OnLine форматы
+                        .event__content 
+                            .event__item 
+                                .event__grid 
+                                    div
+                                        img(src="@img/team-1-1.png", alt="" draggable="false")
+                                    div
+                                        img(src="@img/team-1-2.png", alt="" draggable="false")
+                                    div
+                                        img(src="@img/team-1-3.png", alt="" draggable="false")
+                                .event__item-title Ковбойский тимбилдинг / <span>200 человек</span>
+                            .event__item 
+                                .event__grid 
+                                    div
+                                        img(src="@img/team-2-1.png", alt="" draggable="false")
+                                    div
+                                        img(src="@img/team-2-2.png", alt="" draggable="false")
+                                    div
+                                        img(src="@img/team-2-3.png", alt="" draggable="false")
+                                .event__item-title Тимбилдинг «На выживание» / <span>140 человек</span>
+                            .event__item 
+                                .event__grid 
+                                    div
+                                        img(src="@img/team-3-1.png", alt="" draggable="false")
+                                    div
+                                        img(src="@img/team-3-2.png", alt="" draggable="false")
+                                    div
+                                        img(src="@img/team-3-3.png", alt="" draggable="false")
+                                .event__item-title Тиибилдинг «В Бункере» / <span>140 человек</span>
+                            .event__item 
+                                .event__grid 
+                                    div
+                                        img(src="@img/team-4-1.png", alt="" draggable="false")
+                                    div
+                                        img(src="@img/team-4-2.png", alt="" draggable="false")
+                                    div
+                                        img(src="@img/team-4-3.png", alt="" draggable="false")
+                                .event__item-title Тимбилдинг для китайской компании в Артурс спа отеле
+                            .event__item 
+                                .event__grid 
+                                    div
+                                        img(src="@img/team-5-1.png", alt="" draggable="false")
+                                    div
+                                        img(src="@img/team-5-2.png", alt="" draggable="false")
+                                    div
+                                        img(src="@img/team-5-3.png", alt="" draggable="false")
+                                .event__item-title Тимбилдинг Загадка Да Винчи в Царьграде, / <span>200 человек</span>
+                            .event__item 
+                                .event__grid 
+                                    div
+                                        img(src="@img/team-6-1.png", alt="" draggable="false")
+                                    div
+                                        img(src="@img/team-6-2.png", alt="" draggable="false")
+                                    div
+                                        img(src="@img/team-6-3.png", alt="" draggable="false")
+                                .event__item-title Тимбилдинг Племя компании, в Ареал парк-отеле, / <span>250 человек</span>
+                            .event__item 
+                                .event__grid 
+                                    div
+                                        img(src="@img/team-7-1.png", alt="" draggable="false")
+                                    div
+                                        img(src="@img/team-7-2.png", alt="" draggable="false")
+                                    div
+                                        img(src="@img/team-7-3.png", alt="" draggable="false")
+                                .event__item-title Тимбилдинг Форд Боярд в Яхт-клубе
+            include components/footer 
+            +footer
+        script(src="js/app.min.js") 

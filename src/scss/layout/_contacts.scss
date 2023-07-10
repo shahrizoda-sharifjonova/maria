@@ -28,6 +28,8 @@
             @include resa('padding-right', 20px);
             @include resa('padding-bottom', 60px);
             @include resa('padding-left', 20px);
+            @include resa('width', 360px);
+            @include resa('max-width', 360px);
         }
     }
     &__title{

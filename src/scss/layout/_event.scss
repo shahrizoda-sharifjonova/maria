@@ -1,4 +1,8 @@
 .event{
+    @include res('padding-bottom', 140px);
+    @include media(576){
+        @include resa('padding-bottom', 80px);
+    }
     &__title{
         color: #292826;
         @include res('font-size', 62px);
@@ -6,6 +10,10 @@
         font-weight: 400;
         line-height: normal;
         @include res('margin-bottom', 20px);
+        @include media(576){
+            @include resa('font-size', 36px);
+            @include resa('margin-bottom', 30px);
+        }
     }
     &__tags{
         display: flex;
@@ -13,6 +21,11 @@
         @include res('gap', 4px);
         @include res('margin-bottom', 40px);
         @include res('max-width', 995px);
+        @include media(576){
+            @include resa('gap', 4px);
+            max-width: 100%;
+            @include resa('margin-bottom', 30px);
+        }
     }
     &__tag{
         color: #000;
@@ -24,22 +37,38 @@
         @include res('border-radius', 6px);
         border: solid #5AADC3;
         @include res('border-width', 1px);
+        @include media(576){
+            @include resa('padding', 8px);
+            @include resa('border-width', 1px);
+            @include resa('border-radius', 6px);
+            @include resa('font-size', 12px);
+        }
     }
     &__content{
         display: flex;
         flex-wrap: wrap;
         @include res('gap', 30px);
+        @include media(576){
+            @include resa('gap', 30px);
+        }
     }
     &__item{
         display: flex;
         flex-direction: column;
         @include res('gap', 20px);
         @include res('width', 386px);
+        @include media(576){
+            width: 100%;
+            @include resa('gap', 20px);
+        }
         &-title{
             color: #4A4742;
             @include res('font-size', 21px);
             font-style: normal;
             font-weight: 400;
+            @include media(576){
+                @include resa('font-size', 16px);
+            }
             span{
                 color: #5AADC3;
             }
@@ -53,8 +82,16 @@
         grid-row-gap: 0px;
         @include res('height', 226px);
         @include res('gap', 8px);
+        @include media(576){
+            @include resa('gap', 6px);
+            @include resa('height', 187px);
+        }
         div{
             line-height: 0;
+            @include media(576){
+                @include resa('border-radius', 4px);
+                overflow: hidden;
+            }
             &:nth-of-type(1){
                 grid-area: 1 / 1 / 3 / 3;
             }

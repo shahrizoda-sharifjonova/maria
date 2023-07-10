@@ -6,7 +6,7 @@
     @include media(576){
         border: none;
         @include resa('padding-top', 20px);
-        @include resa('padding-bottom', 20px);
+        @include resa('padding-bottom', 40px);
     }
     &__body{
         display: flex;
