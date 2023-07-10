@@ -12,15 +12,14 @@
         justify-content: space-between;
     }
     .logo{
-        @include res('width', 128px);
+        @include res('width', 130px);
         @include media(575){
-            @include resa('width', 71px);
+            @include resa('width', 64px);
+            @include resa('height', 45px);
         }
         img{
-            @include res('width', 128px);
-            @include media(575){
-                @include resa('width', 71px);
-            }
+            width: 100%;
+            height: 100%;
         }
     }
     &__content{
